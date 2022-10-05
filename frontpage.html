@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cv Project</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    body{
+        background-image: url('cvprojectbg.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 1;
+    }
+    h1{
+        font-size: 60px;
+        color: blue;
+        padding: 300px 400px;
+        
+    }
+    #round{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        display: block;
+    }
+    .flex-container{
+        display: flex;
+        background-color: blue;
+        margin-bottom: 50px;
+        
+    } 
+    .flex-container>div{
+        background-color: orange;
+        margin: 30px;
+        border-radius: 5px;
+    }
+    .overlay{
+        
+         opacity: 0;
+       transition: 0s ease;
+       background-color: #008CBA;
+      
+    }
+    .personaldiv:hover .overlay{
+        opacity: 1;
+    }
+    .personal{ 
+        color: white;
+      font-size: 16px;
+      text-align: center;
+    }
+    .Contantsdiv:hover .overlay{
+       opacity: 1;
+    }
+    .contants{
+        color: white;
+        font-size: 16px;
+        text-align: center;
+    }
+    .schoolingdiv:hover .overlay{
+        opacity: 1;
+    }
+    .schooling{
+        color: white;
+        text-align: center;
+        font-size: 16px;
+    }
+    .workingdiv:hover .overlay{
+        opacity: 1;
+    }
+    .working{
+        color: white;
+        text-align: center;
+        font-size: 16px;
+    }
+    .interestdiv:hover .overlay{
+        opacity: 1;
+    }
+    .interest{
+        color: white;
+        text-align: center;
+        font-size: 16px;
+    }
+</style>
+<style>
+    body{
+        background-color: whitesmoke;
+    }
+    #headline{
+        text-shadow: 20px;
+    }
+    .flex-container1{
+        display: flex;
+        background-color: white;
+        border: 20px 20px 20px 20px;
+    }
+    .flex-container1>div{
+        margin: 20px;
+    }
+    #jercont{
+        background-color: blue;
+        width: 400px;
+        height: 400px;
+        border-radius: 30px;
+        box-shadow: 100px;
+        
+    }
+    .address1{
+        display: flex;
+        flex-direction: row;
+    }
+    .address{
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+        margin-left: 10px;
+      
+    }
+    .phone1{
+        display: flex;
+        flex-direction: row;
+    }
+    .phone{
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .contantall{
+        background-color: cornflowerblue;
+        border-radius: 30px;
+        width: 800px;
+    }
+    form{
+        margin-left: 60px;
+    }
+    .rate{
+        height: 30px;
+        width: 60px;
+    }
+    button{
+        margin-top: 20px;
+    }
+    .numbertag{
+        padding: 12px 12px;
+    }
+    </style>
+    <style>
+      /*education div styling*/
+      #downeducation{
+        background-color: lightblue;
+        border-radius: 30px;
+
+      }
+      .flex-container2{
+        display: flex;
+      }
+      .flex-container2>div{
+         margin-left: 170px;
+      }
+      #kibini{
+        height: 300px;
+        width: 600px;
+      }
+      .dot{
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        display: inline;
+        background-color: red;
+      }
+
+    </style>
+</head>
+<body>
+   <h1>Jerson Fest CV</h1> 
+   <div class="flex-container">
+      
+    <div class="personaldiv">
+            <img id="round" src="photo1.jpeg" class="image" alt="photo1">
+            <div class="overlay">
+         <a href="#downjerson" target="_self"><div class="personal">JERSON ABOUT</div></a>
+            </div>
+      </div>
+      <div class="Contantsdiv">
+           <img id="round" src="contants.png" class="image" alt="photo1">
+            <div class="overlay">
+             <a href="#downcontant" target="_self"><div class="contants">CONTANTS</div></a>
+            </div>
+      </div>
+      <div class="schoolingdiv"> 
+        <img id="round" src="schooling.png" class="image" alt="photo1">
+        <div class="overlay">
+            <div class="schooling">SCHOOLING</div>
+        </div>
+      </div>
+      <div class="workingdiv">
+        <img id="round" src="working.png" class="image" alt="photo1">
+        <div class="overlay">
+            <div class="working">WORK ABOUT</div>
+        </div>
+      </div>
+      <div class="interestdiv">
+        <img id="round" src="hobby.jpeg" class="image" alt="photo1">
+        <div class="overlay">
+            <div class="interest">HOBBY</div>
+        </div>
+      </div>
+   </div>
+   <div id="downjerson">
+    <div class="heading"><h2><center><i>JERSON FEST PERSONAL INFORMATION</i></center></h2></div>
+    <div class="container">
+     <div class="row">
+         <div class="col-sm-4 col-md-4 col-xs-4 col-lg-4" id="passport">
+             <img id="round"class="passport" src="photo1.jpeg" alt="passport" usemap="#pic2020">
+             <map name="pic2020">
+                 <area shape="default" alt="phic" href="https://en.wikipedia.org/wiki/Jerson_Cabral" target="_blank">
+             </map>
+             <p>NAME : JOSEPH JERSON KENYA<br>
+                NATIONALITY : KENYA <br>
+                DATE OF BIRTH : 21 DEC 2002<br>
+                CONTACT ADDRESS : 345 MOI DRIVE UMOJA<br>
+                MOBILE NO : 0746892636 <br>
+                EMAIL  :<i>josephkivanga26@gmail.com</i><br>
+                SCHOOL NO :PA107/G/9409/20 <br>
+                COUNTY : NAIROBI 047 
+             </p>
+         </div>
+         <div class="col-sm-8">
+             <h4><u><center>JERSON FEST PIC</center></u></h4>
+             <div class="piclinks">
+                    <ul class="kianlink">
+                       <a href="jerson1.jpeg" target="_self"><li>KIAN HOLIDAY</li></a>
+                       <a href="jerson2.jpeg" target="_blank"><li>KIAN AT WORK</li></a>
+                       <a href="jerson3.jpeg" target="_blank"><li>KIAN  AT VACATION</li></a>
+                       <a href="kian1.jpeg " target="_blank"><li>KIAN  AT SCHOOL</li></a>
+                       <a href="kian2.jpeg" target="_blank"><li>KIAN  AT SCHOOL</li></a>
+ 
+                    </ul>
+             </div>
+         </div>
+     </div>
+    </div>
+    <div class="container-fluid">
+        <h4><center><U>CITY VISITED</U></center></h4>
+        <div class="row">
+           <div class="col-sm-4">
+             <figure>
+             <img id="round" src="rio.jpeg" alt="rio" id="rioke">
+             <figcaption>RIO SOUTH AMERICA</figcaption>
+             </figure>
+           </div>
+           <div class="col-sm-4">
+             <figure>
+                 <img id="round" src="paris.jpeg" alt="rio" id="rioke">
+                 <figcaption>PARIS</figcaption>
+                 </figure>
+           </div>
+           <div class="col-sm-4">
+             <figure>
+                 <img id="round" src="cananda.jpeg" alt="rio" id="rioke">
+                 <figcaption>CANANDA</figcaption>
+                 </figure>
+           </div>
+        </div>
+    </div>
+   </div>
+   <div id="downcontant">
+    <h2 id="headline"><center>JERSON CONTACT</center></h2> 
+    <br>
+    <div class="flex-container1">
+       <div class="comment">
+           <div id="jercont">
+               <div class="address1">
+              <img class="address" src="contant/address.jpeg" alt="address" usemap="#googlemap">
+                <map name="googlemap">
+                   <area shape="default" alt="google map" target="_blank" href="https://www.google.co.ke/maps/place/Moi+Drive,+Nairobi/@-1.2883205,36.8889596,17z/data=!3m1!4b1!4m5!3m4!1s0x182f13931f6399ed:0xfefc9816fbd0425d!8m2!3d-1.2883259!4d36.8911483?hl=en">
+                </map>
+               <h4 style="margin-left:10px;margin-top: 55px;">Moi Drive Nairobi KENYA</h4><br>
+               </div>
+               <div class="phone1">
+               <img class="phone" src="contant/phone.jpeg" alt="phone">
+               <h4 style="margin-left: 10px;margin-top:55px">0746892636</h4>
+               </div>
+               <div class="phone1">
+                   <img     class="phone" src="contant/email.jpeg" alt="phone">
+                   <h4 style="margin-left: 10px;margin-top:55px"><i>josephkivanga26@gmail.com</i></h4>
+               </div>
+               <div class="phone1">
+                   <img  class="phone" src="contant/website.jpeg" alt="phone">
+                   <h4 style="margin-left:10px;margin-top:55px">www.jerfestkenya202937.com</h4>
+               </div>
+           </div>
+       </div>
+       <div class="contantall">
+           <h3><center>COMMENT</center></h3>
+           <div class="rating">
+            <p style="margin-left: 50px;">Select your rating of the cv</p>
+               <form>
+                   <input id="5star" name="5star" type="radio" value="5star">
+                   <label for="5star"> 5 star<img style="margin-left: 6px;" class="rate"
+                       src="ratestar/5star.png"></label><br>
+                   <input  id="5star" name="5star" type="radio" value="5star">
+                   <label for="5star"> 4 star<img style="margin-left: 6px;" class="rate"
+                       src="ratestar/four.png"></label><br>
+                   <input id="5star" name="5star" type="radio" value="5star">
+                       <label for="5star"> 3 star<img style="margin-left: 6px;" class="rate"
+                       src="ratestar/three.jpeg"></label><br>
+                   <input id="5star" name="5star" type="radio" value="5star">
+                   <label for="5star"> 2 star<img style="margin-left: 6px;" class="rate"
+                       src="ratestar/twostar.jpeg"></label><br>
+                       <input id="5star" name="5star" type="radio" value="5star">
+                   <label for="5star"> 1 star<img style="margin-left: 6px;" class="rate"
+                       src="ratestar/onestar.jpeg"></label><br>
+                   <button type="button" style="background-color: red; color: white; margin-bottom: 10px;"
+                    >SUBMIT</button>
+               </form>
+
+           </div>
+       </div>
+    </div>
+   </div>
+   <div id="downeducation">
+       <h2 style="color: red ;"><center>EDUCATION BACKGROUND</center></h2>
+       <div class="flex-container2">
+           <div class="educa">1</div>
+           <div class="educapic">
+              <h2 style="color: orange ;"><center>SCHOOL PICTURE</center></h2>
+              <div class="slideshow-container">
+                 <div class="myslide-fade">
+                    <div class="numbertag">1/3</div>
+                    <img id="kibini" src="kibini.jpeg" alt="kibini" width="100%">
+                    <div class="text">Caption 1</div>
+                 </div>
+                <div class="myslide-fade">
+                    <div class="numbertag">2/3</div>
+                    <img id="kibini" src="kibini.jpeg" alt="kibini" width="100%">
+                    <div class="text">Caption 2</div>
+                </div>
+                    <div class="myslide-fade">
+                    <div class="numbertag">3/3</div>
+                    <img id="kibini" src="kibini.jpeg" alt="kibini" width="100%">
+                     <div class="text">Caption 3</div>
+                 </div> 
+                    <a class="prev" onclick="plusSlides(-1)"></a>
+                    <a class="next" onclick="plusSlides(1)">></a>
+              </div>
+              <br>
+              <div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                  </div>                  
+              </div>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
